@@ -15,7 +15,7 @@ import {
   ContentContainer,
 } from './styles';
 
-import { useAccount } from 'sn-wolf';
+import { useAccount } from 'starkweb/react';
 import { SIWEButton } from '../../Standard/SIWE';
 import { useSIWE } from '../../../siwe';
 

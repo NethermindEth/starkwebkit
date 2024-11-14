@@ -1,5 +1,6 @@
 declare global {
   interface Window {
+    starknet: any;
     trustWallet: any;
     trustwallet: any;
   }

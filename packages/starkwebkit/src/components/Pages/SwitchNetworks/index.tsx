@@ -6,7 +6,7 @@ import {
   ModalBody,
 } from '../../Common/Modal/styles';
 import ChainSelectList from '../../Common/ChainSelectList';
-import { useAccount, useConnect, useDisconnect } from 'sn-wolf';
+import { useAccount, useConnect, useDisconnect } from 'starkweb/react';
 
 import useLocales from '../../../hooks/useLocales';
 

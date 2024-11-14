@@ -27,10 +27,10 @@ import {
 } from '../hooks/useConnectCallback';
 import { isFamily } from '../utils/wallets';
 import { useConnector } from '../hooks/useConnectors';
-import { WolfContext, useAccount } from 'sn-wolf';
+import { StarkwebContext, useAccount } from 'starkweb/react';
 import { Web3ContextProvider } from './contexts/web3';
 import { useChainIsSupported } from '../hooks/useChainIsSupported';
-import { Hex } from 'strkjs';
+import { Hex } from 'starkweb';
 
 export const routes = {
   ONBOARDING: 'onboarding',
@@ -119,9 +119,9 @@ export const ConnectKitProvider = ({
   onDisconnect,
   debugMode = false,
 }: ConnectKitProviderProps) => {
-  // ConnectKitProvider must be within a WagmiProvider
-  if (!React.useContext(WolfContext)) {
-    throw Error('ConnectKitProvider must be within a WagmiProvider');
+  // ConnectKitProvider must be within a StarkwebProvider
+  if (!React.useContext(StarkwebContext)) {
+    throw Error('ConnectKitProvider must be within a StarkwebProvider');
   }
 
   // Only allow for mounting ConnectKitProvider once, so we avoid weird global

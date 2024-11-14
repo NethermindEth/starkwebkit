@@ -1,6 +1,6 @@
-import { http } from 'sn-wolf';
-import { type CreateConfigParameters } from 'sn-wolf-core';
-import { mainnet, sepolia} from 'sn-wolf/chains';
+import { http } from 'starkweb';
+import { type CreateConfigParameters } from 'starkweb/core';
+import { mainnet, sepolia} from 'starkweb/chains';
 
 import defaultConnectors from './defaultConnectors';
 

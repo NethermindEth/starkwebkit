@@ -1,5 +1,5 @@
-import { Chain } from 'strkjs';
-import { useConfig } from 'sn-wolf';
+import { Chain } from 'starkweb';
+import { useConfig } from 'starkweb/react';
 
 export function useChains() {
   const wolf = useConfig();

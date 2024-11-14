@@ -1,5 +1,6 @@
-import { CreateConnectorFn } from 'sn-wolf';
-import { injected } from 'sn-wolf-connectors';
+import { CreateConnectorFn } from 'starkweb/core';
+// TODO: change to starkweb/connectors
+import { injected } from 'starkweb/core';
 
 import { walletConfigs } from './walletConfigs';
 

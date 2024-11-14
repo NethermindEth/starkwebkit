@@ -13,7 +13,7 @@ import {
   // @ts-ignore
   // useEnsName,
   useBalance,
-} from 'sn-wolf';
+} from 'starkweb/react';
 
 import {
   AvatarContainer,

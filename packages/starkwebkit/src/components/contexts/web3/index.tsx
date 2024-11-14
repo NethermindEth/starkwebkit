@@ -4,8 +4,8 @@
 
 import React from 'react';
 
-import { Address, Chain } from 'strkjs';
-import { useAccount } from 'sn-wolf';
+import { Address, Chain } from 'starkweb';
+import { useAccount } from 'starkweb/react';
 
 import { useChains } from '../../../hooks/useChains';
 import { useWalletConnectUri } from '../../../hooks/connectors/useWalletConnectUri';

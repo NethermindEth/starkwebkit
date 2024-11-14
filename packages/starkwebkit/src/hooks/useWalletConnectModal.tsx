@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Connector, CreateConnectorFn } from 'sn-wolf';
+import { Connector } from 'starkweb/core';
 
 import { useContext } from '../components/ConnectKit';
 

@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { Address, Hex } from 'strkjs';
+import { Address, Hex } from 'starkweb';
 
 export enum StatusState {
   READY = 'ready',

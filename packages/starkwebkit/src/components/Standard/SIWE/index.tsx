@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import useIsMounted from '../../../hooks/useIsMounted';
 import useLocales from '../../../hooks/useLocales';
 import { SIWESession, useSIWE } from '../../../siwe';
-import { useAccount } from 'sn-wolf';
+import { useAccount } from 'starkweb/react';
 import { useModal } from '../../../hooks/useModal';
 
 type ButtonProps = {

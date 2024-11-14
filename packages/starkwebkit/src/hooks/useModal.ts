@@ -1,4 +1,4 @@
-import { useAccount } from 'sn-wolf';
+import { useAccount } from 'starkweb/react';
 import { routes, useContext } from '../components/ConnectKit';
 import { useSIWE } from '../siwe';
 import {

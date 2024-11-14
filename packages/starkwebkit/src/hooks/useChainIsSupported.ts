@@ -1,5 +1,5 @@
-import { useConfig } from 'sn-wolf';
-import { Hex } from 'strkjs';
+import { useConfig } from 'starkweb/react';
+import { Hex } from 'starkweb';
 
 export function useChainIsSupported(chainId?: Hex): boolean | null {
   const { chains } = useConfig();

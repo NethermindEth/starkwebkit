@@ -1,7 +1,7 @@
 import React from 'react';
 // @ts-ignore
-// import { useAccount, useEnsName } from 'sn-wolf';
-import { useAccount } from 'sn-wolf';
+// import { useAccount, useEnsName } from 'starkweb/react';
+import { useAccount } from 'starkweb/react';
 import { truncateENSAddress, truncateEthAddress } from '../../utils';
 import useIsMounted from '../../hooks/useIsMounted';
 
@@ -22,7 +22,7 @@ import { ResetContainer } from '../../styles';
 import { AuthIcon } from '../../assets/icons';
 import { useSIWE } from '../../siwe';
 import useLocales from '../../hooks/useLocales';
-import { Chain } from 'strkjs';
+import { Chain } from 'starkweb';
 import { useChainIsSupported } from '../../hooks/useChainIsSupported';
 import { useEnsFallbackConfig } from '../../hooks/useEnsFallbackConfig';
 

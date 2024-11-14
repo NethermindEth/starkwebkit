@@ -6,7 +6,7 @@ import styled from '../../styles/styled';
 import { keyframes } from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import { useAccount, useBalance, useBlockNumber } from 'sn-wolf';
+import { useAccount, useBalance, useBlockNumber } from 'starkweb/react';
 import useIsMounted from '../../hooks/useIsMounted';
 
 import Chain from '../Common/Chain';

@@ -1,7 +1,8 @@
-import type { Config } from 'sn-wolf-core';
-import { http, createConfig } from 'sn-wolf';
-import { mainnet } from 'sn-wolf/chains';
+import type { Config } from 'starkweb/core';
+import { createConfig } from 'starkweb/core';
+import { mainnet } from 'starkweb/chains';
 import { useChainIsSupported } from './useChainIsSupported';
+import { http } from 'starkweb';
 
 const ensFallbackConfig = createConfig({
   chains: [mainnet],

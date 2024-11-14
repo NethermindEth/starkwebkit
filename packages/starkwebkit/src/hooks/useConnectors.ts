@@ -1,7 +1,8 @@
-import { type Connector, useConnectors as useWolfConnectors } from 'sn-wolf';
+import { type Connector } from 'starkweb/core';
+import { useConnectors as useStarkwebConnectors } from 'starkweb/react';
 
 export function useConnectors() {
-  const connectors = useWolfConnectors();
+  const connectors = useStarkwebConnectors();
   return connectors ?? [];
 }
 

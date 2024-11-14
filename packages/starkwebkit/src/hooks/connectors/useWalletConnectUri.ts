@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
-import { Connector, useAccount } from 'sn-wolf';
+import { useAccount } from 'starkweb/react';
+import { Connector } from 'starkweb/core';
 import { useContext } from '../../components/ConnectKit';
 import { useConnect } from '../useConnect';
 import { useWalletConnectConnector } from '../useConnectors';

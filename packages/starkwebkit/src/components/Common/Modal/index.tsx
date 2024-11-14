@@ -40,7 +40,7 @@ import FocusTrap from '../../../hooks/useFocusTrap';
 import usePrevious from '../../../hooks/usePrevious';
 import { CustomTheme } from '../../../types';
 import { useThemeContext } from '../../ConnectKitThemeProvider/ConnectKitThemeProvider';
-import { useAccount, useSwitchChain } from 'sn-wolf';
+import { useAccount, useSwitchChain } from 'starkweb/react';
 import { AuthIcon } from '../../../assets/icons';
 import { useSIWE } from '../../../siwe';
 import useLocales from '../../../hooks/useLocales';

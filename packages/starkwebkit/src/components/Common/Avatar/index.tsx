@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import { EnsAvatar, ImageContainer } from './styles';
-// import { useEnsName, useEnsAvatar, useEnsAddress } from 'sn-wolf';
+// import { useEnsName, useEnsAvatar, useEnsAddress } from 'starkweb/react';
 import { normalize } from 'viem/ens';
 import { ResetContainer } from '../../../styles';
 import { useContext } from '../../ConnectKit';

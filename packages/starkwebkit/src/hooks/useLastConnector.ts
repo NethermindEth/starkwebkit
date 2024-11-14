@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useConfig } from 'sn-wolf';
+import { useConfig } from 'starkweb/react';
 
 export const useLastConnector = () => {
   const { storage } = useConfig();

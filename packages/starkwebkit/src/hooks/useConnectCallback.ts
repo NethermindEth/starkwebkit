@@ -1,4 +1,4 @@
-import { useAccountEffect } from 'sn-wolf';
+import { useAccountEffect } from 'starkweb/react';
 
 export type useConnectCallbackProps = {
   onConnect?: ({

@@ -11,7 +11,7 @@ import { chainConfigs } from '../../../constants/chainConfigs';
 import Chains from '../../../assets/chains';
 import useIsMounted from '../../../hooks/useIsMounted';
 import { useChainIsSupported } from '../../../hooks/useChainIsSupported';
-import { Hex } from 'strkjs';
+import { Hex } from 'starkweb';
 
 const Spinner = (
   <svg

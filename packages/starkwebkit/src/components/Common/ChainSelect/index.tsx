@@ -14,7 +14,7 @@ import ChainSelectDropdown from '../ChainSelectDropdown';
 import Chain from '../Chain';
 import useLocales from '../../../hooks/useLocales';
 
-import { useAccount, useSwitchChain } from 'sn-wolf';
+import { useAccount, useSwitchChain } from 'starkweb/react';
 
 const Container = styled(motion.div)``;
 

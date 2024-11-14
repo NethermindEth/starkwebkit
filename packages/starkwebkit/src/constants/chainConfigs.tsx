@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import Logos from '../assets/chains';
-import { Hex } from 'strkjs';
+import { Hex } from 'starkweb';
 
 //TODO: chain_id is optional because wagmi doesn't have it
 type Chain = {

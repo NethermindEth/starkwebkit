@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { SIWEContext, StatusState, SIWESession } from './SIWEContext';
-import { Hex } from 'strkjs';
+import { Hex } from 'starkweb';
 
 type HookProps = {
   isSignedIn: boolean;
@@ -41,7 +41,7 @@ export const useSIWE = ({ onSignIn, onSignOut }: UseSIWEConfig = {}):
       isLoading: false,
       isSuccess: false,
       isReady: false,
-      reset: () => {},
+      reset: () => { },
       signIn: () => Promise.reject(),
       signOut: () => Promise.reject(),
     };
@@ -54,8 +54,8 @@ export const useSIWE = ({ onSignIn, onSignOut }: UseSIWEConfig = {}):
   const currentStatus = address
     ? StatusState.SUCCESS
     : session.isLoading || nonce.isLoading
-    ? StatusState.LOADING
-    : status;
+      ? StatusState.LOADING
+      : status;
 
   const isLoading = currentStatus === StatusState.LOADING;
   const isSuccess = currentStatus === StatusState.SUCCESS;
@@ -71,9 +71,9 @@ export const useSIWE = ({ onSignIn, onSignOut }: UseSIWEConfig = {}):
     isSignedIn,
     data: isSignedIn
       ? {
-          address: address as `0x${string}`,
-          chainId: chainId as Hex,
-        }
+        address: address as `0x${string}`,
+        chainId: chainId as Hex,
+      }
       : undefined,
     status: currentStatus,
     error: session.error || nonce.error,

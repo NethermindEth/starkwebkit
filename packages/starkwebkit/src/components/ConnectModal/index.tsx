@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useAccount } from 'sn-wolf';
+import { useAccount } from 'starkweb/react';
 import { routes, useContext } from '../ConnectKit';
 import { CustomTheme, Languages, Mode, Theme } from '../../types';
 import Modal from '../Common/Modal';

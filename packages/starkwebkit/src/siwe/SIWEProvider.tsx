@@ -1,7 +1,7 @@
 import { ReactNode, useContext, useEffect, useState } from 'react';
-import { useAccount, useAccountEffect, useSignMessage } from 'sn-wolf';
+import { useAccount, useAccountEffect, useSignMessage } from 'starkweb/react';
 
-// import { getAddress } from 'strkjs';
+// import { getAddress } from 'starkweb';
 import { useQuery } from '@tanstack/react-query';
 
 import { Context as ConnectKitContext } from '../components/ConnectKit';

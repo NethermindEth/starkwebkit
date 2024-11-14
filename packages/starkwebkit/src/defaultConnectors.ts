@@ -1,9 +1,10 @@
-import { CreateConnectorFn } from 'sn-wolf';
+import { CreateConnectorFn } from 'starkweb/core';
+// TODO: change to starkweb/connectors
 import {
   injected,
   argentX,
   braavos,
-} from 'sn-wolf-connectors';
+} from 'starkweb/core';
 
 type DefaultConnectorsProps = {
   app: {

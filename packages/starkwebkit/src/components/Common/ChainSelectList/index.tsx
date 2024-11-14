@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAccount, useSwitchChain } from 'sn-wolf';
+import { useAccount, useSwitchChain } from 'starkweb/react';
 import { chainConfigs } from '../../../constants/chainConfigs';
 
 import {
@@ -21,7 +21,7 @@ import { isCoinbaseWalletConnector, isMobile } from '../../../utils';
 import ChainIcons from '../../../assets/chains';
 import useLocales from '../../../hooks/useLocales';
 import { useContext } from '../../ConnectKit';
-import { Hex } from 'strkjs';
+import { Hex } from 'starkweb';
 
 const Spinner = (
   <svg

@@ -6,10 +6,10 @@
  *
  */
 
-import { fallback, http, webSocket } from 'sn-wolf';
-import { type CreateConfigParameters } from 'sn-wolf-core';
-import { type Chain, mainnet, sepolia } from 'sn-wolf/chains';
-import { type HttpTransport, type WebSocketTransport } from 'strkjs';
+import { fallback, http, webSocket } from 'starkweb';
+import { type CreateConfigParameters } from 'starkweb/core';
+import { type Chain, mainnet, sepolia } from 'starkweb/chains';
+import { type HttpTransport, type WebSocketTransport } from 'starkweb';
 
 import { chainConfigs } from './constants/chainConfigs';
 
@@ -67,7 +67,9 @@ export const getDefaultTransports = ({
 
     urls.push(http());
 
-    transports[chain.id] = fallback(urls);
+    // transports[chain.id] = fallback(urls);
+    // @ts-expect-error
+    transports[chain.id] = fallback() as any;
   });
 
   return transports;

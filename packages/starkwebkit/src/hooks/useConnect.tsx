@@ -4,19 +4,21 @@
  */
 
 import {
-  type UseConnectParameters,
-  useConnect as wolfUseConnect,
   CreateConnectorFn,
   Connector,
-} from 'sn-wolf';
+} from 'starkweb/core';
+
+import {
+  type UseConnectParameters,
+  useConnect as starkwebUseConnect,
+} from 'starkweb/react';
 import { useContext } from '../components/ConnectKit';
-import { useLastConnector } from './useLastConnector';
-import { Hex } from 'strkjs';
+import { Hex } from 'starkweb';
 
 export function useConnect({ ...props }: UseConnectParameters = {}) {
   const context = useContext();
 
-  const { connect, connectAsync, connectors, ...rest } = wolfUseConnect({
+  const { connect, connectAsync, connectors, ...rest } = starkwebUseConnect({
     ...props,
     mutation: {
       ...props.mutation,
