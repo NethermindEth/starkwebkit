@@ -1,14 +1,14 @@
 {
   "name": "starkwebkit-next-siwe",
   "version": "0.0.1",
-  "author": "Family",
-  "homepage": "https://docs.family.co/connectkit",
+  "author": "Nethermind",
+  "homepage": "https://docs.starkwebkit.com",
   "license": "BSD-2-Clause license",
   "description": "Connecting a wallet, made simple.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/family/connectkit.git",
-    "directory": "packages/connectkit-next-siwe"
+    "url": "git+https://github.com/NethermindEth/starkwebkit.git",
+    "directory": "packages/starkwebkit-next-siwe"
   },
   "type": "module",
   "exports": "./build/index.es.js",
@@ -37,7 +37,7 @@
   ],
   "dependencies": {
     "iron-session": "^6.2.1",
-    "starkweb": "0.0.7"
+    "starkweb": "0.0.8"
   },
   "peerDependencies": {
     "connectkit": ">=1.2.0",
