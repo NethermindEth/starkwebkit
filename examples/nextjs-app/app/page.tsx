@@ -1,7 +1,7 @@
 'use client';
 
-import { useAccount, useConnect, useDisconnect, useBlockNumber } from 'sn-wolf';
-import { ConnectKitButton } from 'sn-connectkit';
+import { useAccount, useConnect, useDisconnect, useBlockNumber } from 'starkweb/react';
+import { ConnectKitButton } from 'starkwebkit';
 
 function App() {
   const account = useAccount();

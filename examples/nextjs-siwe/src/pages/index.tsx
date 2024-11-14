@@ -1,4 +1,4 @@
-import { ConnectKitButton, useSIWE } from 'sn-connectkit';
+import { ConnectKitButton, useSIWE } from 'starkwebkit';
 
 export default function Home({ address }: { address?: string }) {
   const { data, isSignedIn, signOut, signIn } = useSIWE();

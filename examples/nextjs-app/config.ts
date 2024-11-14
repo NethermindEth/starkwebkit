@@ -1,6 +1,6 @@
-import { getDefaultConfig } from 'connectkit';
-import { createConfig } from 'sn-wolf';
-import { mainnet, sepolia } from 'sn-wolf/chains';
+import { getDefaultConfig } from 'starkwebkit';
+import { createConfig } from 'starkweb/core';
+import { mainnet, sepolia } from 'starkweb/chains';
 
 export const config = createConfig(
   getDefaultConfig({
@@ -10,7 +10,7 @@ export const config = createConfig(
   })
 );
 
-declare module 'sn-wolf' {
+declare module 'starkweb' {
   interface Register {
     config: typeof config;
   }

@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { WolfProvider, createConfig } from 'sn-wolf';
+import { createConfig } from 'starkweb/core';
+import { StarkwebProvider } from 'starkweb/react'; 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ConnectKitProvider, getDefaultConfig } from 'sn-connectkit';
+import { ConnectKitProvider, SIWEProvider, getDefaultConfig } from 'starkwebkit';
 
 const config = createConfig(
   getDefaultConfig({
@@ -15,10 +16,10 @@ const queryClient = new QueryClient();
 
 export const Web3Provider = ({ children }: { children: React.ReactNode }) => {
   return (
-    <WolfProvider config={config}>
+    <StarkwebProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <ConnectKitProvider debugMode>{children}</ConnectKitProvider>
       </QueryClientProvider>
-    </WolfProvider>
+    </StarkwebProvider>
   );
 };

@@ -1,9 +1,9 @@
 import '@/styles/globals.css';
 import { siweClient } from '@/utils/siweClient';
-import { ConnectKitProvider, getDefaultConfig } from 'sn-connectkit';
+import { ConnectKitProvider, getDefaultConfig } from 'starkwebkit';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
-import { WolfProvider, createConfig } from 'sn-wolf';
+import { StarkwebProvider, createConfig } from 'starkweb/react';
 
 const config = createConfig(
   getDefaultConfig({
@@ -14,7 +14,7 @@ const config = createConfig(
 const queryClient = new QueryClient();
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <WolfProvider config={config}>
+    <StarkwebProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <siweClient.Provider>
           <ConnectKitProvider>
@@ -22,6 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
           </ConnectKitProvider>
         </siweClient.Provider>
       </QueryClientProvider>
-    </WolfProvider>
+    </StarkwebProvider>
   );
 }

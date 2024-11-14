@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { ConnectKitButton } from 'sn-connectkit';
+import { ConnectKitButton } from 'starkwebkit';
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         height: '100vh',
       }}
     >
-      {/* <ConnectKitButton /> */}
+      <ConnectKitButton />
     </div>
   );
 };

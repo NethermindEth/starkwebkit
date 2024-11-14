@@ -1,4 +1,4 @@
-import { configureClientSIWE } from 'sn-connectkit-next-siwe'
+import { configureClientSIWE } from 'starkwebkit-next-siwe'
 
 export const siweClient = configureClientSIWE({
   apiRoutePrefix: '/api/siwe', // Your API route directory

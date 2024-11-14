@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { WagmiProvider, createConfig } from 'sn-wolf';
-import { ConnectKitProvider, getDefaultConfig } from 'connectkit';
+import { WagmiProvider, createConfig } from 'starkweb/react';
+import { ConnectKitProvider, getDefaultConfig } from 'starkwebkit';
 
 const config = createConfig(
   getDefaultConfig({

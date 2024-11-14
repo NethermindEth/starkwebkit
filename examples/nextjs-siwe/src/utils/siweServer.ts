@@ -1,4 +1,4 @@
-import { configureServerSideSIWE } from 'sn-connectkit-next-siwe';
+import { configureServerSideSIWE } from 'starkwebkit-next-siwe';
 
 export const siweServer = configureServerSideSIWE({
   session: {

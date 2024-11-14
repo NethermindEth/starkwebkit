@@ -13,11 +13,8 @@
     "next": "14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sn-connectkit": "workspace:packages/connectkit",
-    "sn-wolf": "^0.0.12",
-    "strkjs": "^0.1.26",
-    "viem": "^2.13.0",
-    "wagmi": "^2.10.2"
+    "starkweb": "0.0.7",
+    "starkwebkit": "workspace:packages/starkwebkit"
   },
   "devDependencies": {
     "@types/node": "^18.19.3",

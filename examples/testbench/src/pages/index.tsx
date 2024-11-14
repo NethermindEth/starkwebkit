@@ -30,7 +30,7 @@ import { Checkbox, Textbox, Select, SelectProps } from '../components/inputs';
 
 import CustomAvatar from '../components/CustomAvatar';
 import CustomSIWEButton from '../components/CustomSIWEButton';
-import { Address } from 'strkjs';
+import { Address } from 'starkweb';
 
 const allChains = Object.keys(wagmiChains).map(
   (key) => wagmiChains[key as keyof typeof wagmiChains]

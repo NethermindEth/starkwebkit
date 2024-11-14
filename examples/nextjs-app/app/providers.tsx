@@ -2,18 +2,18 @@
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { type ReactNode } from 'react';
-import { WolfProvider } from 'sn-wolf';
+import { StarkwebProvider } from 'starkweb/react';
 
 import { config } from '../config';
-import { ConnectKitProvider } from 'connectkit';
+import { ConnectKitProvider } from 'starkwebkit';
 
 const queryClient = new QueryClient();
 export function Providers(props: { children: ReactNode }) {
   return (
-    <WolfProvider config={config}>
+    <StarkwebProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <ConnectKitProvider>{props.children}</ConnectKitProvider>
       </QueryClientProvider>
-    </WolfProvider>
+    </StarkwebProvider>
   );
 }

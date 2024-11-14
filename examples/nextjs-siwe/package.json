@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.7",
     "next": "12.3.0",
+    "postcss": "^8.4.14",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "siwe": "^2.1.4",
-    "sn-connectkit": "workspace:packages/connectkit",
-    "sn-connectkit-next-siwe": "workspace:packages/connectkit-next-siwe",
-    "strkjs": "0.2.2",
-    "wagmi": "^2.10.2"
+    "starkweb": "0.0.7",
+    "starkwebkit": "workspace:packages/starkwebkit",
+    "starkwebkit-next-siwe": "workspace:packages/starkwebkit-next-siwe",
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "18.7.18",

@@ -1,17 +1,17 @@
 import { FunctionComponent, ComponentProps } from 'react';
-import { SIWEProvider } from 'sn-connectkit';
+import { SIWEProvider } from 'starkwebkit';
 import type { IncomingMessage, ServerResponse } from 'http';
 import { getIronSession, IronSession, IronSessionOptions } from 'iron-session';
 import { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
 
-import { Chain, Transport, PublicClient, createPublicClient, http, Hex, Address } from 'strkjs';
-import * as allChains from 'strkjs/chains';
+import { Chain, Transport, PublicClient, createPublicClient, http, Hex, Address } from 'starkweb';
+import * as allChains from 'starkweb/chains';
 import {
   generateSiwsNonce,
   createSiwsMessage,
   parseSiwsMessage,
-} from 'strkjs/siws';
-import { SIGNATURE } from 'strkjs/_types/types/components';
+} from 'starkweb/siws';
+import { SIGNATURE } from 'starkweb/dist/types/types/components';
 
 type RouteHandlerOptions = {
   afterNonce?: (

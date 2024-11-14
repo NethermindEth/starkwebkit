@@ -4,7 +4,7 @@ import { TestBenchProvider } from '../TestbenchProvider';
 import { getDefaultConfig, wallets } from 'connectkit';
 
 import { WagmiProvider, createConfig } from 'sn-wolf';
-import { defineChain, type Chain, http } from 'strkjs';
+import { defineChain, type Chain, http } from 'starkweb';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { mainnet } from 'viem/chains';
