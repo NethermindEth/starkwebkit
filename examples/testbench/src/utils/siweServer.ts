@@ -7,9 +7,9 @@ export const siweServer = configureServerSideSIWE({
     transports: ckConfig.transports,
   },
   options: {
-    afterLogout: async () => console.log('afterLogout'),
-    afterNonce: async () => console.log('afterNonce'),
-    afterSession: async () => console.log('afterSession'),
-    afterVerify: async () => console.log('afterVerify'),
+    afterLogout: async () => {},
+    afterNonce: async () => {},
+    afterSession: async () => {},
+    afterVerify: async () => {},
   },
 });

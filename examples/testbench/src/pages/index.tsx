@@ -83,10 +83,8 @@ const AccountInfo = () => {
 
   const { isSignedIn, signOut } = useSIWE({
     onSignIn: (data?: SIWESession) => {
-      console.log('onSignIn', data);
     },
     onSignOut: () => {
-      console.log('onSignOut');
     },
   });
 
@@ -109,7 +107,7 @@ const AccountInfo = () => {
             </tr>
             <tr>
               <td>Chain Supported</td>
-              <td>{chains.some((x) => x.id === chain?.chain_id) ? 'Yes' : 'No'}</td>
+              <td>{chains.some((x) => x.chain_id === chain?.chain_id) ? 'Yes' : 'No'}</td>
             </tr>
             <tr>
               <td>Address</td>
@@ -261,10 +259,8 @@ const Home: NextPage = () => {
 
   const { open, setOpen, openSIWE, openAbout } = useModal({
     onConnect: () => {
-      console.log('onConnect Hook');
     },
     onDisconnect: () => {
-      console.log('onDisconnect Hook');
     },
   });
 
@@ -296,10 +292,8 @@ const Home: NextPage = () => {
           <SIWEButton
             showSignOutButton
             onSignIn={(data?: SIWESession) => {
-              console.log('onSignIn SIWEButton', data);
             }}
             onSignOut={() => {
-              console.log('onSignOut SIWEButton');
             }}
           />
           <CustomSIWEButton />

@@ -1,6 +1,5 @@
 import { CreateConnectorFn } from 'starkweb/core';
-// TODO: change to starkweb/connectors
-import { injected } from 'starkweb/core';
+import { metamask, keplr } from 'starkweb/connectors';
 
 import { walletConfigs } from './walletConfigs';
 
@@ -15,14 +14,7 @@ export const wallets: {
   const flag =
     config.name?.replace('Wallet', '').replace(' ', '') ??
     target[0].toUpperCase() + target.slice(1);
-
-  const connector = injected({
-    target: {
-      id: target,
-      name: config.name ?? config.shortName ?? key,
-      provider: (w) => w?.starknet?.[`is${flag}`],
-    },
-  });
+  const connector = metamask();
   const name = (config.name ?? config.shortName ?? key)
     .toLowerCase()
     // capitalize first letter

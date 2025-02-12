@@ -46,7 +46,7 @@ export const useWallets = (): WalletProps[] => {
       connector,
       iconShape: 'squircle',
       isInstalled:
-        connector.type === 'argentX' || connector.type === 'braavos'
+        connector.type === 'argentX' || connector.type === 'braavos' || connector.type === 'metamask' || connector.type === 'keplr'
     };
 
     if (walletId) {

@@ -14,10 +14,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <siweClient.Provider
       onSignIn={(data?: SIWESession) => {
-        console.log('onSignIn Provider', data);
       }}
       onSignOut={() => {
-        console.log('onSignOut Provider');
       }}
     >
       <ConnectKitProvider
@@ -27,10 +25,8 @@ function App({ Component, pageProps }: AppProps) {
         options={options}
         customTheme={customTheme}
         onConnect={(data) => {
-          console.log('onConnect Provider', data);
         }}
         onDisconnect={() => {
-          console.log('onDisconnect Provider');
         }}
         debugMode
       >

@@ -166,7 +166,6 @@ const verifyRoute = async (
 ) => {
   switch (req.method) {
     case 'POST':
-      console.log('verifyRoute');
       try {
         const session = await getSession(req, res, sessionConfig);
         const { address, statement, nonce, chainId, version, domain, uri, signature } = req.body as {
@@ -200,9 +199,8 @@ const verifyRoute = async (
           chain,
           transport: http(),
         });
-        console.log('publicClient', signature);
 
-        const verified = await publicClient.verifySiwsMessage({
+        const verified = await publicClient.verifyMessage({
           statement,
           signature,
           nonce: session.nonce ?? '1',
@@ -212,10 +210,7 @@ const verifyRoute = async (
           chainId,
           version,
         });
-        // const verified = await publicClient.verifyMessage({
-        //   message,
-        //   signature,
-        // });
+
         if (!verified) {
           return res.status(422).end('Unable to verify signature.');
         }
@@ -316,8 +311,6 @@ export const configureClientSIWE = <TSessionData extends Object = {}>({
           }).toString()
         }}
         verifyMessage={({ address, statement, nonce, chainId, version, domain, uri, signature }) => {
-          console.log('verifyMessage', signature);
-          console.log('verifyMessage', address, statement, nonce, chainId, version, domain, uri, signature);
           return fetch(`${apiRoutePrefix}/verify`, {
             method: 'POST',
             headers: {

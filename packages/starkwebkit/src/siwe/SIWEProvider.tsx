@@ -108,9 +108,7 @@ export const SIWEProvider = ({
       }
 
       const chainId = chain?.chain_id;
-      console.log('chainId', chainId);
       if (!address) throw new Error('No address found');
-      console.log('address', address);
       if (!chainId) throw new Error('No chainId found');
 
       if (!nonce.data) {
@@ -136,7 +134,6 @@ export const SIWEProvider = ({
         chainId,
         domain: window.location.host,
       });
-      console.log('signature', signature);
 
       // Verify signature
       if (!(await siweConfig.verifyMessage({

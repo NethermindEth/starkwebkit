@@ -7,7 +7,7 @@ import { http } from 'starkweb';
 const ensFallbackConfig = createConfig({
   chains: [mainnet],
   transports: {
-    [mainnet.id]: http(),
+    [mainnet.chain_id]: http(),
   },
 });
 

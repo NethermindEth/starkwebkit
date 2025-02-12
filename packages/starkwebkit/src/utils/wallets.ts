@@ -1,8 +1,10 @@
+import { SNIP1193Provider } from "starkweb";
+
 declare global {
   interface Window {
-    starknet: any;
-    trustWallet: any;
-    trustwallet: any;
+    starknet?: SNIP1193Provider;
+    trustWallet?: any;
+    trustwallet?: any;
   }
 }
 

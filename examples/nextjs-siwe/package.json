@@ -14,7 +14,7 @@
     "postcss": "^8.4.14",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "starkweb": "0.0.7",
+    "starkweb": "0.0.16",
     "starkwebkit": "workspace:packages/starkwebkit",
     "starkwebkit-next-siwe": "workspace:packages/starkwebkit-next-siwe",
     "tailwindcss": "^3.3.2"

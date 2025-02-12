@@ -1,17 +1,11 @@
-<a href="https://docs.family.co/connectkit">
-  <img width="1080" alt="connectkit" src="https://github.com/family/connectkit/assets/1930210/87c2e868-3228-44b8-82c3-a38adf6d1bbf">
-</a>
+# StarkWebKit
 
-
-
-# ConnectKit
-
-ConnectKit is a powerful [React](https://reactjs.org/) component library for connecting a wallet to your dApp. It supports the most popular connectors and chains out of the box and provides a beautiful, seamless experience.
+StarkWebKit is a powerful [React](https://reactjs.org/) component library for connecting a wallet to your Starknet dApp. It supports the most popular connectors and chains out of the box and provides a beautiful, seamless experience.
 
 ## Features
 
 - 💡 TypeScript Ready — Get types straight out of the box.
-- 🌱 Ecosystem Standards — Uses top libraries such as [wagmi](https://github.com/wagmi-dev/wagmi).
+- 🌱 Ecosystem Standards — Uses top libraries such as [starkweb](https://github.com/NethermindEth/starkweb).
 - 🖥️ Simple UX — Give users a simple, attractive experience.
 - 🎨 Beautiful Themes — Predesigned themes or full customization.
 
@@ -19,45 +13,45 @@ and much more...
 
 ## Quick Start
 
-Get started with a ConnectKit + [wagmi](https://wagmi.sh/) + [viem](https://viem.sh) project by running one of the following in your terminal:
+Get started with a StarkWebKit + [starkweb](https://github.com/NethermindEth/starkweb) project by running one of the following in your terminal:
 
 #### npm
 
 ```sh
-npx create-react-app my-app --template cra-template-connectkit
+npx create-react-app my-app --template cra-template-starkwebkit
 ```
 
 #### yarn
 
 ```sh
-yarn create react-app my-app --template cra-template-connectkit
+yarn create react-app my-app --template cra-template-starkwebkit
 ```
 
 #### pnpm
 
 ```sh
-pnpm dlx create-react-app ./my-app --template cra-template-connectkit
+pnpm dlx create-react-app ./my-app --template cra-template-starkwebkit
 ```
 
 ## Documentation
 
-You can find the full ConnectKit documentation in the Family docs [here](https://docs.family.co/connectkit).
+You can find the full StarkWebKit documentation in the StarkWebKit docs [here](https://docs.starkwebkit.com).
 
 ## API Reference
 
-You can find the full API Reference in the Family docs [here](https://docs.family.co/connectkit/api-reference).
+You can find the full StarkWebKit API Reference in the StarkWebKit docs [here](https://docs.starkwebkit.com/api-reference).
 
 ## Examples
 
-There are various runnable examples included in this repository in the [examples folder](https://github.com/family/connectkit/tree/main/examples):
+There are various runnable examples included in this repository in the [examples folder](https://github.com/starkwebkit/starkwebkit/tree/main/examples):
 
-- [Create React App Example (TypeScript)](https://github.com/family/connectkit/tree/main/examples/cra)
-- [Next.js Example (TypeScript)](https://github.com/family/connectkit/tree/main/examples/nextjs)
-- [Vite Example (TypeScript)](https://github.com/family/connectkit/tree/main/examples/vite)
+- [Create React App Example (TypeScript)](https://github.com/starkwebkit/starkwebkit/tree/main/examples/cra)
+- [Next.js Example (TypeScript)](https://github.com/starkwebkit/starkwebkit/tree/main/examples/nextjs)
+- [Vite Example (TypeScript)](https://github.com/starkwebkit/starkwebkit/tree/main/examples/vite)
 
 ### Try in CodeSandbox
 
-You can try out some ConnectKit examples directly in your browser through CodeSandbox:
+You can try out some StarkWebKit examples directly in your browser through CodeSandbox:
 
 - [Create React App Example (TypeScript)](https://codesandbox.io/s/5rhqm0?file=/README.md)
 - [Next.js (TypeScript)](https://codesandbox.io/s/qnvyqe?file=/README.md)
@@ -65,11 +59,11 @@ You can try out some ConnectKit examples directly in your browser through CodeSa
 
 ### Running Examples Locally
 
-Clone the ConnectKit project and install the necessary dependencies:
+Clone the StarkWebKit project and install the necessary dependencies:
 
 ```sh
-$ git clone git@github.com:family/connectkit.git
-$ cd connectkit
+$ git clone git@github.com:NethermindEth/starkwebkit.git
+$ cd starkwebkit
 $ yarn install
 ```
 
@@ -91,12 +85,12 @@ $ yarn dev:cra # Create React App
 
 ## Contribute
 
-Before starting on anything, please have a read through our [Contribution Guidelines](https://github.com/family/connectkit/blob/main/CONTRIBUTING.md).
+Before starting on anything, please have a read through our [Contribution Guidelines](https://github.com/NethermindEth/starkwebkit/blob/main/CONTRIBUTING.md).
 
 ## Twitter
 
-Follow [@family](https://twitter.com/family) on Twitter for the latest updates on ConnectKit.
+Follow [@starkwebkit](https://twitter.com/starkwebkit) on Twitter for the latest updates on StarkWebKit.
 
 ## License
 
-See [LICENSE](https://github.com/family/connectkit/blob/main/LICENSE) for more information.
+See [LICENSE](https://github.com/NethermindEth/starkwebkit/blob/main/LICENSE) for more information.

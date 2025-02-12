@@ -6,9 +6,8 @@ const CustomSIWEButton = () => {
   const { setOpen } = useModal();
   const { data, isReady, isRejected, isLoading, isSignedIn, signOut, signIn } =
     useSIWE({
-      onSignIn: (sessionData?: SIWESession) =>
-        console.log('onSignIn CustomSIWEButton', sessionData),
-      onSignOut: () => console.log('onSignOut CustomSIWEButton'),
+      onSignIn: (sessionData?: SIWESession) => {},
+      onSignOut: () => {},
     });
   const { isConnected } = useAccount();
 
