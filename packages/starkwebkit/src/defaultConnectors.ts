@@ -1,11 +1,10 @@
-import { CreateConnectorFn } from 'starkweb/core';
 import {
-  injected,
   argentX,
   braavos,
   metamask,
   keplr
 } from 'starkweb/connectors';
+import { CreateConnectorFn } from 'starkweb/core';
 
 type DefaultConnectorsProps = {
   app: {
@@ -25,23 +24,12 @@ const defaultConnectors = ({
 
   const connectors: CreateConnectorFn[] = [];
 
-
-  // Add the rest of the connectors
   connectors.push(
     argentX(),
     braavos(),
     metamask(),
     keplr(),
   );
-
-
-  /*
-  connectors.push(
-    injected({
-      shimDisconnect: true,
-    })
-  );
-  */
 
   return connectors;
 };

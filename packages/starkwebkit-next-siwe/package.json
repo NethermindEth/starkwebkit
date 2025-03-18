@@ -1,6 +1,6 @@
 {
   "name": "starkwebkit-next-siwe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Nethermind",
   "homepage": "https://docs.starkwebkit.com",
   "license": "BSD-2-Clause license",
@@ -37,7 +37,7 @@
   ],
   "dependencies": {
     "iron-session": "^6.2.1",
-    "starkweb": "0.0.8"
+    "starkweb": "0.0.17"
   },
   "peerDependencies": {
     "connectkit": ">=1.2.0",

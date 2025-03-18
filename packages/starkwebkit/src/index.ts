@@ -1,4 +1,4 @@
-export const STARKWEBKIT_VERSION = '0.0.1';
+export const STARKWEBKIT_VERSION = '0.0.2';
 
 export * as Types from './types';
 export { default as getDefaultConfig } from './defaultConfig';
